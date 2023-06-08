@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.web.WebProperties;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
 
 import static jakarta.persistence.GenerationType.AUTO;
 
@@ -27,6 +27,5 @@ public class Server {
     private String name;
     private String memory;
     private String type;
-    private String imageUrl;
     private Status status;
 }
